@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8F6A6CF-CCE3-4FEB-B58B-3C1D4854F149}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prog_Areas_Plantilla</RootNamespace>
+    <AssemblyName>Prog_Areas_Plantilla</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.4.1.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Controllers\Clean_And_Refill.cs" />
+    <Compile Include="Controllers\DataBaseController.cs" />
+    <Compile Include="Controllers\ImportarExcel.cs" />
+    <Compile Include="Controllers\ReinsertarAcabados.cs" />
+    <Compile Include="Controllers\ReinsertarAlojamientos.cs" />
+    <Compile Include="Controllers\ReinsertarGrupoLocales.cs" />
+    <Compile Include="Controllers\ReinsertarLocal.cs" />
+    <Compile Include="Controllers\ReinsertarSubsistemas.cs" />
+    <Compile Include="Controllers\Usuario_Controller.cs" />
+    <Compile Include="Modelos\Model_Plantilla.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_Plantilla.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Model_Plantilla.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Model_Plantilla.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_Plantilla.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\sysdiagrams.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_AF_Metro_Cuadrado.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_AF_Persona.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Aire_Fresco.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Alojamiento.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Alojamiento_Tipo.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_ALTV.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Ambiente.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Catalogo_Impermeable.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Catalogo_Pared.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Catalogo_Rodapie.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Catalogo_Suelo.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Catalogo_Techo.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Climatizacion.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_CoefArea.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Comunicaciones_Tv.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Criterio.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_DI.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Equipamiento.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Grupo_Locales.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Local.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_LocalTipo.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Mod.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Porciento_BD.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Renovaciones.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Subsistema_Area.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Subsistema_Tipo.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_sysdiagrams.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_TD.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_TD_Pos.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_TF.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Tipo_Edificio.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_Tratamiento.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_TT_TV.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_UPSC.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_UPSI.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\T_W_Aire.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Usuario.cs">
+      <DependentUpon>Model_Plantilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Modelos\Model_Plantilla.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_Plantilla.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Modelos\Model_Plantilla.edmx.diagram">
+      <DependentUpon>Model_Plantilla.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modelos\Model_Plantilla.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_Plantilla.edmx</DependentUpon>
+      <LastGenOutput>Model_Plantilla.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Modelos\Model_Plantilla.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_Plantilla.edmx</DependentUpon>
+      <LastGenOutput>Model_Plantilla.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

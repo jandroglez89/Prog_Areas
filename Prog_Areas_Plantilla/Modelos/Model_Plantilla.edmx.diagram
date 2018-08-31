@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1db387a6b9934b55b35b628277f1b6e9" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_AF_Metro_Cuadrado" Width="1.5" PointX="1.5" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_AF_Persona" Width="1.5" PointX="1.5" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Aire_Fresco" Width="1.5" PointX="1.5" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Alojamiento" Width="1.5" PointX="3.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Alojamiento_Tipo" Width="1.5" PointX="2" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_ALTV" Width="1.5" PointX="1.5" PointY="45.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Ambiente" Width="1.5" PointX="3.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Catalogo_Impermeable" Width="1.5" PointX="1.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Catalogo_Pared" Width="1.5" PointX="1.5" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Catalogo_Rodapie" Width="1.5" PointX="1.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Catalogo_Suelo" Width="1.5" PointX="1.5" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Catalogo_Techo" Width="1.5" PointX="1.5" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Climatizacion" Width="1.5" PointX="3.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_CoefArea" Width="1.5" PointX="3.75" PointY="41.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Comunicaciones_Tv" Width="1.5" PointX="3.75" PointY="52.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Criterio" Width="1.5" PointX="1.5" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_DI" Width="1.5" PointX="1.5" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Equipamiento" Width="1.5" PointX="1.5" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Grupo_Locales" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Local" Width="1.5" PointX="6" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_LocalTipo" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Mod" Width="1.5" PointX="3.75" PointY="62.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Porciento_BD" Width="1.5" PointX="3.75" PointY="64.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Renovaciones" Width="1.5" PointX="1.5" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Subsistema_Area" Width="1.5" PointX="3.75" PointY="67" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Subsistema_Tipo" Width="1.5" PointX="3.75" PointY="69.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_TD" Width="1.5" PointX="1.5" PointY="50.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_TD_Pos" Width="1.5" PointX="1.5" PointY="52.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_TF" Width="1.5" PointX="1.5" PointY="55" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Tipo_Edificio" Width="1.5" PointX="3.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_Tratamiento" Width="1.5" PointX="1.5" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_TT_TV" Width="1.5" PointX="1.5" PointY="57.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_UPSC" Width="1.5" PointX="1.5" PointY="59.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_UPSI" Width="1.5" PointX="1.5" PointY="62" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_W_Aire" Width="1.5" PointX="1.5" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.Usuario" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.T_sysdiagrams" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Aire_Fresco_AF_Metro_Cuadrado" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Aire_Fresco_AF_Persona" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Climatizacion_Aire_Fresco" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Local_T_Alojamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_ALTV" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Ambiente_Catalogo_Impermeable" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Ambiente_Catalogo_Pared" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Ambiente_Catalogo_Rodapie" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Ambiente_Catalogo_Suelo" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Ambiente_Catalogo_Techo" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Local_Ambiente" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Climatizacion_Criterio" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Climatizacion_Equipamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Climatizacion_Renovaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Climatizacion_Tratamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Local_Climatizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Climatizacion_T_W_Aire" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Local_T_CoefArea" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_DI" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_TD" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_TD_Pos" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_TF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_TT_TV" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_UPSC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Comunicaciones_Tv_UPSI" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Local_Comunicaciones_Tv" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Local_T_Grupo_Locales" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_LocalTipo_T_Grupo_Locales" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Local_Subsistema_Area" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_Local_Subsistema_Tipo" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Local_T_Mod" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Local_T_Porciento_BD" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Local_T_Tipo_Edificio" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PLANTILLAModel.FK_T_Local_T_LocalTipo" />
+        <EntityTypeShape EntityType="DB_PLANTILLAModel.a_sysdiagrams" Width="1.5" PointX="8.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

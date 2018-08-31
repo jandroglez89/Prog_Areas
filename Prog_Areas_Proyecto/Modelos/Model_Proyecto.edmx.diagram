@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c36a260985f7468db8a95fed90695c6b" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_BIMModel.AF_Metro_Cuadrado" Width="1.5" PointX="1.5" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.AF_Persona" Width="1.5" PointX="1.5" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Aire_Fresco" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Alojamiento" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Alojamiento_Tipo" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.ALTV" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Ambiente" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Climatizacion" Width="1.5" PointX="3" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.CoefArea" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Comunicaciones_Tv" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Criterio" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Desglose" Width="1.5" PointX="3" PointY="48.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.DI" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Equipamiento" Width="1.5" PointX="0.75" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Local" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Locales_Proyecto" Width="1.5" PointX="7.5" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.LocalTipo" Width="1.5" PointX="3" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Proyecto" Width="1.5" PointX="0.75" PointY="47.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Renovaciones" Width="1.5" PointX="0.75" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.TD" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.TD_Pos" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.TF" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.Tratamiento" Width="1.5" PointX="0.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.TT_TV" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.UPSC" Width="1.5" PointX="0.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.UPSI" Width="1.5" PointX="0.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_BIMModel.W_Aire" Width="1.5" PointX="0.75" PointY="44.125" IsExpanded="true" />
+        <AssociationConnector Association="DB_BIMModel.FK_Aire_Fresco_AF_Metro_Cuadrado" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Aire_Fresco_AF_Persona" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Climatizacion_Aire_Fresco" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Local_Alojamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_ALTV" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Local_Ambiente" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Climatizacion_Criterio" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Climatizacion_Equipamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Climatizacion_Renovaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Climatizacion_Tratamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Climatizacion_W_Aire1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Local_Climatizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Local_CoefArea" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_DI" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_TD" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_TD_Pos" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_TF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_TT_TV" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_UPSC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Comunicaciones_Tv_UPSI" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Local_Comunicaciones_Tv" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Desglose_Proyecto" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Local_Desglose" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Local_LocalTipo" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Locales_Proyecto_Local" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_BIMModel.FK_Locales_Proyecto_Proyecto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
