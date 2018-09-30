@@ -1,0 +1,894 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_PLANTILLAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="T_AF_Metro_Cuadrado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_AF_Persona">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Aire_Fresco">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Persona" Type="int" />
+    <Property Name="Metro_Cuadrado" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Alojamiento">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Alojamiento_Tipo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Alojamiento" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="T_ALTV">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Ambiente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="255" />
+    <Property Name="Suelo" Type="int" />
+    <Property Name="Rodapie" Type="int" />
+    <Property Name="Pared" Type="int" />
+    <Property Name="Techo" Type="int" />
+    <Property Name="Impermeable" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Catalogo_Impermeable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Cod" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CapituloID" Type="varchar" MaxLength="50" />
+    <Property Name="Capitulo" Type="varchar" MaxLength="255" />
+    <Property Name="Grupo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Catalogo_Pared">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Cod" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CapituloID" Type="varchar" MaxLength="50" />
+    <Property Name="Capitulo" Type="varchar" MaxLength="255" />
+    <Property Name="Grupo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Catalogo_Rodapie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Cod" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CapituloID" Type="varchar" MaxLength="50" />
+    <Property Name="Capitulo" Type="varchar" MaxLength="255" />
+    <Property Name="Grupo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Catalogo_Suelo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Cod" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CapituloID" Type="varchar" MaxLength="50" />
+    <Property Name="Capitulo" Type="varchar" MaxLength="255" />
+    <Property Name="Grupo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Catalogo_Techo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Cod" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CapituloID" Type="varchar" MaxLength="50" />
+    <Property Name="Capitulo" Type="varchar" MaxLength="255" />
+    <Property Name="Grupo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Climatizacion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tratamiento" Type="int" />
+    <Property Name="Equipamiento" Type="int" />
+    <Property Name="Criterio" Type="int" />
+    <Property Name="Aire_Fresco" Type="int" />
+    <Property Name="Renovaciones" Type="int" />
+    <Property Name="W_Aire" Type="int" />
+  </EntityType>
+  <EntityType Name="T_CoefArea">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Comunicaciones_Tv">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tf" Type="int" />
+    <Property Name="Td" Type="int" />
+    <Property Name="TD_Pos" Type="int" />
+    <Property Name="UPSC" Type="int" />
+    <Property Name="TT_TV" Type="int" />
+    <Property Name="Di" Type="int" />
+    <Property Name="Altv" Type="int" />
+    <Property Name="UPSI" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Criterio">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_DI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Equipamiento">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Grupo_Locales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+    <Property Name="Cod1" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="T_Local">
+    <Key>
+      <PropertyRef Name="RoomId" />
+    </Key>
+    <Property Name="RoomId" Type="int" Nullable="false" />
+    <Property Name="Key_Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Habitacion" Type="bit" />
+    <Property Name="SubsistemaTipo" Type="int" />
+    <Property Name="SubsistemaArea" Type="int" />
+    <Property Name="Climatizacion" Type="int" />
+    <Property Name="Comunicaciones_TV" Type="int" />
+    <Property Name="Ambiente" Type="int" />
+    <Property Name="Coef_Area" Type="int" />
+    <Property Name="Mod" Type="int" />
+    <Property Name="Tipo_Edificio" Type="int" />
+    <Property Name="Porciento_BD" Type="int" />
+    <Property Name="Alojamiento" Type="int" />
+    <Property Name="Local_Tipo" Type="int" />
+  </EntityType>
+  <EntityType Name="T_LocalTipo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+    <Property Name="Grupo_Locales" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Mod">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Porciento_BD">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="float" />
+  </EntityType>
+  <EntityType Name="T_Renovaciones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_Subsistema_Area">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="T_Subsistema_Tipo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DB_PLANTILLA.dbo.T_sysdiagrams' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="T_sysdiagrams">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="principal_id" />
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="T_TD">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_TD_Pos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_TF">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_Tipo_Edificio">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Tratamiento">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_TT_TV">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_UPSC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_UPSI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_W_Aire">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar(max)" Nullable="false" />
+    <Property Name="password" Type="varchar(max)" Nullable="false" />
+    <Property Name="access_Level" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Aire_Fresco_AF_Metro_Cuadrado">
+    <End Role="T_AF_Metro_Cuadrado" Type="Self.T_AF_Metro_Cuadrado" Multiplicity="0..1" />
+    <End Role="T_Aire_Fresco" Type="Self.T_Aire_Fresco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_AF_Metro_Cuadrado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Aire_Fresco">
+        <PropertyRef Name="Metro_Cuadrado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Aire_Fresco_AF_Persona">
+    <End Role="T_AF_Persona" Type="Self.T_AF_Persona" Multiplicity="0..1" />
+    <End Role="T_Aire_Fresco" Type="Self.T_Aire_Fresco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_AF_Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Aire_Fresco">
+        <PropertyRef Name="Persona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ambiente_Catalogo_Impermeable">
+    <End Role="T_Catalogo_Impermeable" Type="Self.T_Catalogo_Impermeable" Multiplicity="0..1" />
+    <End Role="T_Ambiente" Type="Self.T_Ambiente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Catalogo_Impermeable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Ambiente">
+        <PropertyRef Name="Impermeable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ambiente_Catalogo_Pared">
+    <End Role="T_Catalogo_Pared" Type="Self.T_Catalogo_Pared" Multiplicity="0..1" />
+    <End Role="T_Ambiente" Type="Self.T_Ambiente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Catalogo_Pared">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Ambiente">
+        <PropertyRef Name="Pared" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ambiente_Catalogo_Rodapie">
+    <End Role="T_Catalogo_Rodapie" Type="Self.T_Catalogo_Rodapie" Multiplicity="0..1" />
+    <End Role="T_Ambiente" Type="Self.T_Ambiente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Catalogo_Rodapie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Ambiente">
+        <PropertyRef Name="Rodapie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ambiente_Catalogo_Suelo">
+    <End Role="T_Catalogo_Suelo" Type="Self.T_Catalogo_Suelo" Multiplicity="0..1" />
+    <End Role="T_Ambiente" Type="Self.T_Ambiente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Catalogo_Suelo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Ambiente">
+        <PropertyRef Name="Suelo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ambiente_Catalogo_Techo">
+    <End Role="T_Catalogo_Techo" Type="Self.T_Catalogo_Techo" Multiplicity="0..1" />
+    <End Role="T_Ambiente" Type="Self.T_Ambiente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Catalogo_Techo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Ambiente">
+        <PropertyRef Name="Techo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Climatizacion_Aire_Fresco">
+    <End Role="T_Aire_Fresco" Type="Self.T_Aire_Fresco" Multiplicity="0..1" />
+    <End Role="T_Climatizacion" Type="Self.T_Climatizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Aire_Fresco">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Climatizacion">
+        <PropertyRef Name="Aire_Fresco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Climatizacion_Criterio">
+    <End Role="T_Criterio" Type="Self.T_Criterio" Multiplicity="0..1" />
+    <End Role="T_Climatizacion" Type="Self.T_Climatizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Criterio">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Climatizacion">
+        <PropertyRef Name="Criterio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Climatizacion_Equipamiento">
+    <End Role="T_Equipamiento" Type="Self.T_Equipamiento" Multiplicity="0..1" />
+    <End Role="T_Climatizacion" Type="Self.T_Climatizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Equipamiento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Climatizacion">
+        <PropertyRef Name="Equipamiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Climatizacion_Renovaciones">
+    <End Role="T_Renovaciones" Type="Self.T_Renovaciones" Multiplicity="0..1" />
+    <End Role="T_Climatizacion" Type="Self.T_Climatizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Renovaciones">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Climatizacion">
+        <PropertyRef Name="Renovaciones" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Climatizacion_Tratamiento">
+    <End Role="T_Tratamiento" Type="Self.T_Tratamiento" Multiplicity="0..1" />
+    <End Role="T_Climatizacion" Type="Self.T_Climatizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Tratamiento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Climatizacion">
+        <PropertyRef Name="Tratamiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_ALTV">
+    <End Role="T_ALTV" Type="Self.T_ALTV" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ALTV">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="Altv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_DI">
+    <End Role="T_DI" Type="Self.T_DI" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_DI">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="Di" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_TD">
+    <End Role="T_TD" Type="Self.T_TD" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TD">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="Td" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_TD_Pos">
+    <End Role="T_TD_Pos" Type="Self.T_TD_Pos" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TD_Pos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="TD_Pos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_TF">
+    <End Role="T_TF" Type="Self.T_TF" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TF">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="Tf" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_TT_TV">
+    <End Role="T_TT_TV" Type="Self.T_TT_TV" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TT_TV">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="TT_TV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_UPSC">
+    <End Role="T_UPSC" Type="Self.T_UPSC" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_UPSC">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="UPSC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comunicaciones_Tv_UPSI">
+    <End Role="T_UPSI" Type="Self.T_UPSI" Multiplicity="0..1" />
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_UPSI">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="UPSI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Ambiente">
+    <End Role="T_Ambiente" Type="Self.T_Ambiente" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Ambiente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Ambiente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Climatizacion">
+    <End Role="T_Climatizacion" Type="Self.T_Climatizacion" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Climatizacion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Climatizacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Comunicaciones_Tv">
+    <End Role="T_Comunicaciones_Tv" Type="Self.T_Comunicaciones_Tv" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Comunicaciones_Tv">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Comunicaciones_TV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Subsistema_Area">
+    <End Role="T_Subsistema_Area" Type="Self.T_Subsistema_Area" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Subsistema_Area">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="SubsistemaArea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Subsistema_Tipo">
+    <End Role="T_Subsistema_Tipo" Type="Self.T_Subsistema_Tipo" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Subsistema_Tipo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="SubsistemaTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Climatizacion_T_W_Aire">
+    <End Role="T_W_Aire" Type="Self.T_W_Aire" Multiplicity="0..1" />
+    <End Role="T_Climatizacion" Type="Self.T_Climatizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_W_Aire">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Climatizacion">
+        <PropertyRef Name="W_Aire" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Local_T_Alojamiento">
+    <End Role="T_Alojamiento" Type="Self.T_Alojamiento" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Alojamiento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Alojamiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Local_T_CoefArea">
+    <End Role="T_CoefArea" Type="Self.T_CoefArea" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_CoefArea">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Coef_Area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Local_T_LocalTipo">
+    <End Role="T_LocalTipo" Type="Self.T_LocalTipo" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_LocalTipo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Local_Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Local_T_Mod">
+    <End Role="T_Mod" Type="Self.T_Mod" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Mod">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Mod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Local_T_Porciento_BD">
+    <End Role="T_Porciento_BD" Type="Self.T_Porciento_BD" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Porciento_BD">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Porciento_BD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Local_T_Tipo_Edificio">
+    <End Role="T_Tipo_Edificio" Type="Self.T_Tipo_Edificio" Multiplicity="0..1" />
+    <End Role="T_Local" Type="Self.T_Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Tipo_Edificio">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_Local">
+        <PropertyRef Name="Tipo_Edificio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LocalTipo_T_Grupo_Locales">
+    <End Role="T_Grupo_Locales" Type="Self.T_Grupo_Locales" Multiplicity="0..1" />
+    <End Role="T_LocalTipo" Type="Self.T_LocalTipo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Grupo_Locales">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_LocalTipo">
+        <PropertyRef Name="Grupo_Locales" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_PLANTILLAModelStoreContainer">
+    <EntitySet Name="T_AF_Metro_Cuadrado" EntityType="Self.T_AF_Metro_Cuadrado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_AF_Persona" EntityType="Self.T_AF_Persona" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Aire_Fresco" EntityType="Self.T_Aire_Fresco" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Alojamiento" EntityType="Self.T_Alojamiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Alojamiento_Tipo" EntityType="Self.T_Alojamiento_Tipo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ALTV" EntityType="Self.T_ALTV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Ambiente" EntityType="Self.T_Ambiente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Catalogo_Impermeable" EntityType="Self.T_Catalogo_Impermeable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Catalogo_Pared" EntityType="Self.T_Catalogo_Pared" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Catalogo_Rodapie" EntityType="Self.T_Catalogo_Rodapie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Catalogo_Suelo" EntityType="Self.T_Catalogo_Suelo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Catalogo_Techo" EntityType="Self.T_Catalogo_Techo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Climatizacion" EntityType="Self.T_Climatizacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_CoefArea" EntityType="Self.T_CoefArea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Comunicaciones_Tv" EntityType="Self.T_Comunicaciones_Tv" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Criterio" EntityType="Self.T_Criterio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_DI" EntityType="Self.T_DI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Equipamiento" EntityType="Self.T_Equipamiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Grupo_Locales" EntityType="Self.T_Grupo_Locales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Local" EntityType="Self.T_Local" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_LocalTipo" EntityType="Self.T_LocalTipo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Mod" EntityType="Self.T_Mod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Porciento_BD" EntityType="Self.T_Porciento_BD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Renovaciones" EntityType="Self.T_Renovaciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Subsistema_Area" EntityType="Self.T_Subsistema_Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Subsistema_Tipo" EntityType="Self.T_Subsistema_Tipo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TD" EntityType="Self.T_TD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TD_Pos" EntityType="Self.T_TD_Pos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TF" EntityType="Self.T_TF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Tipo_Edificio" EntityType="Self.T_Tipo_Edificio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Tratamiento" EntityType="Self.T_Tratamiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TT_TV" EntityType="Self.T_TT_TV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_UPSC" EntityType="Self.T_UPSC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_UPSI" EntityType="Self.T_UPSI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_W_Aire" EntityType="Self.T_W_Aire" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_sysdiagrams" EntityType="Self.T_sysdiagrams" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T_sysdiagrams].[name] AS [name], 
+    [T_sysdiagrams].[principal_id] AS [principal_id], 
+    [T_sysdiagrams].[diagram_id] AS [diagram_id], 
+    [T_sysdiagrams].[version] AS [version], 
+    [T_sysdiagrams].[definition] AS [definition]
+    FROM [dbo].[T_sysdiagrams] AS [T_sysdiagrams]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Aire_Fresco_AF_Metro_Cuadrado" Association="Self.FK_Aire_Fresco_AF_Metro_Cuadrado">
+      <End Role="T_AF_Metro_Cuadrado" EntitySet="T_AF_Metro_Cuadrado" />
+      <End Role="T_Aire_Fresco" EntitySet="T_Aire_Fresco" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Aire_Fresco_AF_Persona" Association="Self.FK_Aire_Fresco_AF_Persona">
+      <End Role="T_AF_Persona" EntitySet="T_AF_Persona" />
+      <End Role="T_Aire_Fresco" EntitySet="T_Aire_Fresco" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ambiente_Catalogo_Impermeable" Association="Self.FK_Ambiente_Catalogo_Impermeable">
+      <End Role="T_Catalogo_Impermeable" EntitySet="T_Catalogo_Impermeable" />
+      <End Role="T_Ambiente" EntitySet="T_Ambiente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ambiente_Catalogo_Pared" Association="Self.FK_Ambiente_Catalogo_Pared">
+      <End Role="T_Catalogo_Pared" EntitySet="T_Catalogo_Pared" />
+      <End Role="T_Ambiente" EntitySet="T_Ambiente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ambiente_Catalogo_Rodapie" Association="Self.FK_Ambiente_Catalogo_Rodapie">
+      <End Role="T_Catalogo_Rodapie" EntitySet="T_Catalogo_Rodapie" />
+      <End Role="T_Ambiente" EntitySet="T_Ambiente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ambiente_Catalogo_Suelo" Association="Self.FK_Ambiente_Catalogo_Suelo">
+      <End Role="T_Catalogo_Suelo" EntitySet="T_Catalogo_Suelo" />
+      <End Role="T_Ambiente" EntitySet="T_Ambiente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ambiente_Catalogo_Techo" Association="Self.FK_Ambiente_Catalogo_Techo">
+      <End Role="T_Catalogo_Techo" EntitySet="T_Catalogo_Techo" />
+      <End Role="T_Ambiente" EntitySet="T_Ambiente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Climatizacion_Aire_Fresco" Association="Self.FK_Climatizacion_Aire_Fresco">
+      <End Role="T_Aire_Fresco" EntitySet="T_Aire_Fresco" />
+      <End Role="T_Climatizacion" EntitySet="T_Climatizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Climatizacion_Criterio" Association="Self.FK_Climatizacion_Criterio">
+      <End Role="T_Criterio" EntitySet="T_Criterio" />
+      <End Role="T_Climatizacion" EntitySet="T_Climatizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Climatizacion_Equipamiento" Association="Self.FK_Climatizacion_Equipamiento">
+      <End Role="T_Equipamiento" EntitySet="T_Equipamiento" />
+      <End Role="T_Climatizacion" EntitySet="T_Climatizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Climatizacion_Renovaciones" Association="Self.FK_Climatizacion_Renovaciones">
+      <End Role="T_Renovaciones" EntitySet="T_Renovaciones" />
+      <End Role="T_Climatizacion" EntitySet="T_Climatizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Climatizacion_Tratamiento" Association="Self.FK_Climatizacion_Tratamiento">
+      <End Role="T_Tratamiento" EntitySet="T_Tratamiento" />
+      <End Role="T_Climatizacion" EntitySet="T_Climatizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_ALTV" Association="Self.FK_Comunicaciones_Tv_ALTV">
+      <End Role="T_ALTV" EntitySet="T_ALTV" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_DI" Association="Self.FK_Comunicaciones_Tv_DI">
+      <End Role="T_DI" EntitySet="T_DI" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_TD" Association="Self.FK_Comunicaciones_Tv_TD">
+      <End Role="T_TD" EntitySet="T_TD" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_TD_Pos" Association="Self.FK_Comunicaciones_Tv_TD_Pos">
+      <End Role="T_TD_Pos" EntitySet="T_TD_Pos" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_TF" Association="Self.FK_Comunicaciones_Tv_TF">
+      <End Role="T_TF" EntitySet="T_TF" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_TT_TV" Association="Self.FK_Comunicaciones_Tv_TT_TV">
+      <End Role="T_TT_TV" EntitySet="T_TT_TV" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_UPSC" Association="Self.FK_Comunicaciones_Tv_UPSC">
+      <End Role="T_UPSC" EntitySet="T_UPSC" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comunicaciones_Tv_UPSI" Association="Self.FK_Comunicaciones_Tv_UPSI">
+      <End Role="T_UPSI" EntitySet="T_UPSI" />
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Ambiente" Association="Self.FK_Local_Ambiente">
+      <End Role="T_Ambiente" EntitySet="T_Ambiente" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Climatizacion" Association="Self.FK_Local_Climatizacion">
+      <End Role="T_Climatizacion" EntitySet="T_Climatizacion" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Comunicaciones_Tv" Association="Self.FK_Local_Comunicaciones_Tv">
+      <End Role="T_Comunicaciones_Tv" EntitySet="T_Comunicaciones_Tv" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Subsistema_Area" Association="Self.FK_Local_Subsistema_Area">
+      <End Role="T_Subsistema_Area" EntitySet="T_Subsistema_Area" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Subsistema_Tipo" Association="Self.FK_Local_Subsistema_Tipo">
+      <End Role="T_Subsistema_Tipo" EntitySet="T_Subsistema_Tipo" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Climatizacion_T_W_Aire" Association="Self.FK_T_Climatizacion_T_W_Aire">
+      <End Role="T_W_Aire" EntitySet="T_W_Aire" />
+      <End Role="T_Climatizacion" EntitySet="T_Climatizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Local_T_Alojamiento" Association="Self.FK_T_Local_T_Alojamiento">
+      <End Role="T_Alojamiento" EntitySet="T_Alojamiento" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Local_T_CoefArea" Association="Self.FK_T_Local_T_CoefArea">
+      <End Role="T_CoefArea" EntitySet="T_CoefArea" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Local_T_LocalTipo" Association="Self.FK_T_Local_T_LocalTipo">
+      <End Role="T_LocalTipo" EntitySet="T_LocalTipo" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Local_T_Mod" Association="Self.FK_T_Local_T_Mod">
+      <End Role="T_Mod" EntitySet="T_Mod" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Local_T_Porciento_BD" Association="Self.FK_T_Local_T_Porciento_BD">
+      <End Role="T_Porciento_BD" EntitySet="T_Porciento_BD" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Local_T_Tipo_Edificio" Association="Self.FK_T_Local_T_Tipo_Edificio">
+      <End Role="T_Tipo_Edificio" EntitySet="T_Tipo_Edificio" />
+      <End Role="T_Local" EntitySet="T_Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LocalTipo_T_Grupo_Locales" Association="Self.FK_T_LocalTipo_T_Grupo_Locales">
+      <End Role="T_Grupo_Locales" EntitySet="T_Grupo_Locales" />
+      <End Role="T_LocalTipo" EntitySet="T_LocalTipo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

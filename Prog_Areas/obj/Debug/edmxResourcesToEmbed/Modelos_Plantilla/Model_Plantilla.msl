@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_PLANTILLAModelStoreContainer" CdmEntityContainer="DB_PLANTILLA">
+    <EntitySetMapping Name="T_AF_Metro_Cuadrado">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_AF_Metro_Cuadrado">
+        <MappingFragment StoreEntitySet="T_AF_Metro_Cuadrado">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AF_Persona">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_AF_Persona">
+        <MappingFragment StoreEntitySet="T_AF_Persona">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Aire_Fresco">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Aire_Fresco">
+        <MappingFragment StoreEntitySet="T_Aire_Fresco">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Persona" ColumnName="Persona" />
+          <ScalarProperty Name="Metro_Cuadrado" ColumnName="Metro_Cuadrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Alojamiento">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Alojamiento">
+        <MappingFragment StoreEntitySet="T_Alojamiento">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Alojamiento_Tipo">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Alojamiento_Tipo">
+        <MappingFragment StoreEntitySet="T_Alojamiento_Tipo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Alojamiento" ColumnName="Alojamiento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ALTV">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_ALTV">
+        <MappingFragment StoreEntitySet="T_ALTV">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Ambiente">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Ambiente">
+        <MappingFragment StoreEntitySet="T_Ambiente">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Suelo" ColumnName="Suelo" />
+          <ScalarProperty Name="Rodapie" ColumnName="Rodapie" />
+          <ScalarProperty Name="Pared" ColumnName="Pared" />
+          <ScalarProperty Name="Techo" ColumnName="Techo" />
+          <ScalarProperty Name="Impermeable" ColumnName="Impermeable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Catalogo_Impermeable">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Catalogo_Impermeable">
+        <MappingFragment StoreEntitySet="T_Catalogo_Impermeable">
+          <ScalarProperty Name="Cod" ColumnName="Cod" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CapituloID" ColumnName="CapituloID" />
+          <ScalarProperty Name="Capitulo" ColumnName="Capitulo" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Catalogo_Pared">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Catalogo_Pared">
+        <MappingFragment StoreEntitySet="T_Catalogo_Pared">
+          <ScalarProperty Name="Cod" ColumnName="Cod" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CapituloID" ColumnName="CapituloID" />
+          <ScalarProperty Name="Capitulo" ColumnName="Capitulo" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Catalogo_Rodapie">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Catalogo_Rodapie">
+        <MappingFragment StoreEntitySet="T_Catalogo_Rodapie">
+          <ScalarProperty Name="Cod" ColumnName="Cod" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CapituloID" ColumnName="CapituloID" />
+          <ScalarProperty Name="Capitulo" ColumnName="Capitulo" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Catalogo_Suelo">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Catalogo_Suelo">
+        <MappingFragment StoreEntitySet="T_Catalogo_Suelo">
+          <ScalarProperty Name="Cod" ColumnName="Cod" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CapituloID" ColumnName="CapituloID" />
+          <ScalarProperty Name="Capitulo" ColumnName="Capitulo" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Catalogo_Techo">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Catalogo_Techo">
+        <MappingFragment StoreEntitySet="T_Catalogo_Techo">
+          <ScalarProperty Name="Cod" ColumnName="Cod" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CapituloID" ColumnName="CapituloID" />
+          <ScalarProperty Name="Capitulo" ColumnName="Capitulo" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Climatizacion">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Climatizacion">
+        <MappingFragment StoreEntitySet="T_Climatizacion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tratamiento" ColumnName="Tratamiento" />
+          <ScalarProperty Name="Equipamiento" ColumnName="Equipamiento" />
+          <ScalarProperty Name="Criterio" ColumnName="Criterio" />
+          <ScalarProperty Name="Aire_Fresco" ColumnName="Aire_Fresco" />
+          <ScalarProperty Name="Renovaciones" ColumnName="Renovaciones" />
+          <ScalarProperty Name="W_Aire" ColumnName="W_Aire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CoefArea">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_CoefArea">
+        <MappingFragment StoreEntitySet="T_CoefArea">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Comunicaciones_Tv">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Comunicaciones_Tv">
+        <MappingFragment StoreEntitySet="T_Comunicaciones_Tv">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tf" ColumnName="Tf" />
+          <ScalarProperty Name="Td" ColumnName="Td" />
+          <ScalarProperty Name="TD_Pos" ColumnName="TD_Pos" />
+          <ScalarProperty Name="UPSC" ColumnName="UPSC" />
+          <ScalarProperty Name="TT_TV" ColumnName="TT_TV" />
+          <ScalarProperty Name="Di" ColumnName="Di" />
+          <ScalarProperty Name="Altv" ColumnName="Altv" />
+          <ScalarProperty Name="UPSI" ColumnName="UPSI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Criterio">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Criterio">
+        <MappingFragment StoreEntitySet="T_Criterio">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DI">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_DI">
+        <MappingFragment StoreEntitySet="T_DI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Equipamiento">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Equipamiento">
+        <MappingFragment StoreEntitySet="T_Equipamiento">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Grupo_Locales">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Grupo_Locales">
+        <MappingFragment StoreEntitySet="T_Grupo_Locales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Cod1" ColumnName="Cod1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Local">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Local">
+        <MappingFragment StoreEntitySet="T_Local">
+          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+          <ScalarProperty Name="Key_Name" ColumnName="Key_Name" />
+          <ScalarProperty Name="Habitacion" ColumnName="Habitacion" />
+          <ScalarProperty Name="SubsistemaTipo" ColumnName="SubsistemaTipo" />
+          <ScalarProperty Name="SubsistemaArea" ColumnName="SubsistemaArea" />
+          <ScalarProperty Name="Climatizacion" ColumnName="Climatizacion" />
+          <ScalarProperty Name="Comunicaciones_TV" ColumnName="Comunicaciones_TV" />
+          <ScalarProperty Name="Ambiente" ColumnName="Ambiente" />
+          <ScalarProperty Name="Coef_Area" ColumnName="Coef_Area" />
+          <ScalarProperty Name="Mod" ColumnName="Mod" />
+          <ScalarProperty Name="Tipo_Edificio" ColumnName="Tipo_Edificio" />
+          <ScalarProperty Name="Porciento_BD" ColumnName="Porciento_BD" />
+          <ScalarProperty Name="Alojamiento" ColumnName="Alojamiento" />
+          <ScalarProperty Name="Local_Tipo" ColumnName="Local_Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LocalTipo">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_LocalTipo">
+        <MappingFragment StoreEntitySet="T_LocalTipo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Grupo_Locales" ColumnName="Grupo_Locales" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Mod">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Mod">
+        <MappingFragment StoreEntitySet="T_Mod">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Porciento_BD">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Porciento_BD">
+        <MappingFragment StoreEntitySet="T_Porciento_BD">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Renovaciones">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Renovaciones">
+        <MappingFragment StoreEntitySet="T_Renovaciones">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Subsistema_Area">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Subsistema_Area">
+        <MappingFragment StoreEntitySet="T_Subsistema_Area">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Subsistema_Tipo">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Subsistema_Tipo">
+        <MappingFragment StoreEntitySet="T_Subsistema_Tipo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TD">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_TD">
+        <MappingFragment StoreEntitySet="T_TD">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TD_Pos">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_TD_Pos">
+        <MappingFragment StoreEntitySet="T_TD_Pos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TF">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_TF">
+        <MappingFragment StoreEntitySet="T_TF">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Tipo_Edificio">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Tipo_Edificio">
+        <MappingFragment StoreEntitySet="T_Tipo_Edificio">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Tratamiento">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_Tratamiento">
+        <MappingFragment StoreEntitySet="T_Tratamiento">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TT_TV">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_TT_TV">
+        <MappingFragment StoreEntitySet="T_TT_TV">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UPSC">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_UPSC">
+        <MappingFragment StoreEntitySet="T_UPSC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UPSI">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_UPSI">
+        <MappingFragment StoreEntitySet="T_UPSI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_W_Aire">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_W_Aire">
+        <MappingFragment StoreEntitySet="T_W_Aire">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="access_Level" ColumnName="access_Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_sysdiagrams">
+      <EntityTypeMapping TypeName="DB_PLANTILLAModel.T_sysdiagrams">
+        <MappingFragment StoreEntitySet="T_sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

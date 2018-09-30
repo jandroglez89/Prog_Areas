@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_BIMModelStoreContainer" CdmEntityContainer="DB_BIMEntities1">
+    <EntitySetMapping Name="AF_Metro_Cuadrado">
+      <EntityTypeMapping TypeName="DB_BIMModel.AF_Metro_Cuadrado">
+        <MappingFragment StoreEntitySet="AF_Metro_Cuadrado">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AF_Persona">
+      <EntityTypeMapping TypeName="DB_BIMModel.AF_Persona">
+        <MappingFragment StoreEntitySet="AF_Persona">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Aire_Fresco">
+      <EntityTypeMapping TypeName="DB_BIMModel.Aire_Fresco">
+        <MappingFragment StoreEntitySet="Aire_Fresco">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Persona" ColumnName="Persona" />
+          <ScalarProperty Name="Metro_Cuadrado" ColumnName="Metro_Cuadrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alojamiento">
+      <EntityTypeMapping TypeName="DB_BIMModel.Alojamiento">
+        <MappingFragment StoreEntitySet="Alojamiento">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alojamiento_Tipo">
+      <EntityTypeMapping TypeName="DB_BIMModel.Alojamiento_Tipo">
+        <MappingFragment StoreEntitySet="Alojamiento_Tipo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Alojamiento" ColumnName="Alojamiento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALTV">
+      <EntityTypeMapping TypeName="DB_BIMModel.ALTV">
+        <MappingFragment StoreEntitySet="ALTV">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ambiente">
+      <EntityTypeMapping TypeName="DB_BIMModel.Ambiente">
+        <MappingFragment StoreEntitySet="Ambiente">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Suelo" ColumnName="Suelo" />
+          <ScalarProperty Name="Rodapie" ColumnName="Rodapie" />
+          <ScalarProperty Name="Pared" ColumnName="Pared" />
+          <ScalarProperty Name="Techo" ColumnName="Techo" />
+          <ScalarProperty Name="Impermeable" ColumnName="Impermeable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Climatizacion">
+      <EntityTypeMapping TypeName="DB_BIMModel.Climatizacion">
+        <MappingFragment StoreEntitySet="Climatizacion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tratamiento" ColumnName="Tratamiento" />
+          <ScalarProperty Name="Equipamiento" ColumnName="Equipamiento" />
+          <ScalarProperty Name="Criterio" ColumnName="Criterio" />
+          <ScalarProperty Name="Aire_Fresco" ColumnName="Aire_Fresco" />
+          <ScalarProperty Name="Renovaciones" ColumnName="Renovaciones" />
+          <ScalarProperty Name="W_Aire" ColumnName="W_Aire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CoefArea">
+      <EntityTypeMapping TypeName="DB_BIMModel.CoefArea">
+        <MappingFragment StoreEntitySet="CoefArea">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Area_Programa" ColumnName="Area_Programa" />
+          <ScalarProperty Name="Area_Local" ColumnName="Area_Local" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comunicaciones_Tv">
+      <EntityTypeMapping TypeName="DB_BIMModel.Comunicaciones_Tv">
+        <MappingFragment StoreEntitySet="Comunicaciones_Tv">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tf" ColumnName="Tf" />
+          <ScalarProperty Name="Td" ColumnName="Td" />
+          <ScalarProperty Name="TD_Pos" ColumnName="TD_Pos" />
+          <ScalarProperty Name="UPSC" ColumnName="UPSC" />
+          <ScalarProperty Name="TT_TV" ColumnName="TT_TV" />
+          <ScalarProperty Name="Di" ColumnName="Di" />
+          <ScalarProperty Name="Altv" ColumnName="Altv" />
+          <ScalarProperty Name="UPSI" ColumnName="UPSI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Criterio">
+      <EntityTypeMapping TypeName="DB_BIMModel.Criterio">
+        <MappingFragment StoreEntitySet="Criterio">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DI">
+      <EntityTypeMapping TypeName="DB_BIMModel.DI">
+        <MappingFragment StoreEntitySet="DI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipamiento">
+      <EntityTypeMapping TypeName="DB_BIMModel.Equipamiento">
+        <MappingFragment StoreEntitySet="Equipamiento">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Local">
+      <EntityTypeMapping TypeName="DB_BIMModel.Local">
+        <MappingFragment StoreEntitySet="Local">
+          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+          <ScalarProperty Name="Key_Name" ColumnName="Key_Name" />
+          <ScalarProperty Name="Habitacion" ColumnName="Habitacion" />
+          <ScalarProperty Name="SubsistemaTipo" ColumnName="SubsistemaTipo" />
+          <ScalarProperty Name="SubsistemaArea" ColumnName="SubsistemaArea" />
+          <ScalarProperty Name="Climatizacion" ColumnName="Climatizacion" />
+          <ScalarProperty Name="Comunicaciones_TV" ColumnName="Comunicaciones_TV" />
+          <ScalarProperty Name="Ambiente" ColumnName="Ambiente" />
+          <ScalarProperty Name="Coef_Area" ColumnName="Coef_Area" />
+          <ScalarProperty Name="Mod" ColumnName="Mod" />
+          <ScalarProperty Name="Tipo_Edificio" ColumnName="Tipo_Edificio" />
+          <ScalarProperty Name="Porciento_BD" ColumnName="Porciento_BD" />
+          <ScalarProperty Name="Alojamiento" ColumnName="Alojamiento" />
+          <ScalarProperty Name="Local_Tipo" ColumnName="Local_Tipo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locales_Proyecto">
+      <EntityTypeMapping TypeName="DB_BIMModel.Locales_Proyecto">
+        <MappingFragment StoreEntitySet="Locales_Proyecto">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Proyecto" ColumnName="Proyecto" />
+          <ScalarProperty Name="Local" ColumnName="Local" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocalTipo">
+      <EntityTypeMapping TypeName="DB_BIMModel.LocalTipo">
+        <MappingFragment StoreEntitySet="LocalTipo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Grupo_Locales" ColumnName="Grupo_Locales" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proyecto">
+      <EntityTypeMapping TypeName="DB_BIMModel.Proyecto">
+        <MappingFragment StoreEntitySet="Proyecto">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cod" ColumnName="Cod" />
+          <ScalarProperty Name="Cant_Habitaciones" ColumnName="Cant_Habitaciones" />
+          <ScalarProperty Name="Localizacion" ColumnName="Localizacion" />
+          <ScalarProperty Name="Fecha_Comienzo" ColumnName="Fecha_Comienzo" />
+          <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
+          <ScalarProperty Name="Superficie_Parcela" ColumnName="Superficie_Parcela" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Tipo_Hotel" ColumnName="Tipo_Hotel" />
+          <ScalarProperty Name="Subtipo_Alojamiento" ColumnName="Subtipo_Alojamiento" />
+          <ScalarProperty Name="Tipo_Alojamiento" ColumnName="Tipo_Alojamiento" />
+          <ScalarProperty Name="Maxima_Altura" ColumnName="Maxima_Altura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Renovaciones">
+      <EntityTypeMapping TypeName="DB_BIMModel.Renovaciones">
+        <MappingFragment StoreEntitySet="Renovaciones">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DB_BIMModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TD">
+      <EntityTypeMapping TypeName="DB_BIMModel.TD">
+        <MappingFragment StoreEntitySet="TD">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TD_Pos">
+      <EntityTypeMapping TypeName="DB_BIMModel.TD_Pos">
+        <MappingFragment StoreEntitySet="TD_Pos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TF">
+      <EntityTypeMapping TypeName="DB_BIMModel.TF">
+        <MappingFragment StoreEntitySet="TF">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tratamiento">
+      <EntityTypeMapping TypeName="DB_BIMModel.Tratamiento">
+        <MappingFragment StoreEntitySet="Tratamiento">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_TV">
+      <EntityTypeMapping TypeName="DB_BIMModel.TT_TV">
+        <MappingFragment StoreEntitySet="TT_TV">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UPSC">
+      <EntityTypeMapping TypeName="DB_BIMModel.UPSC">
+        <MappingFragment StoreEntitySet="UPSC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UPSI">
+      <EntityTypeMapping TypeName="DB_BIMModel.UPSI">
+        <MappingFragment StoreEntitySet="UPSI">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="W_Aire">
+      <EntityTypeMapping TypeName="DB_BIMModel.W_Aire">
+        <MappingFragment StoreEntitySet="W_Aire">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
